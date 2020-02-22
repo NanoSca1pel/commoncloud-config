@@ -17,7 +17,7 @@ eureka:
 server:
   port: 8202
 spring:
-  profiles: tset
+  profiles: test
   application:
     name: commoncloud-config-client
 eureka:
