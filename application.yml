@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active:
+    - dev    #实际使用的环境
+---   
+spring:
+  profiles: dev #研发环境
+  application:
+    name: commoncloud-config-lht-dev
+---
+spring:
+  profiles: test #测试环境
+  application:
+    name: commoncloud-config-lht-test
+
+#请保存为UTF-8格式，否则从git上获取配置时会报错
+#配置文件中以 --- 为分隔符
