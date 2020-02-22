@@ -1,7 +1,8 @@
+#这里配置的是如果符合application的格式，却没有查询到已经存在的环境配置 如写的是application-app.yml而不是 application-test.yml或者application-dev.yml 则会跳出的信息
 spring:
   profiles:
     active:
-    - dev    #实际使用的环境
+    - dev    
 ---   
 spring:
   profiles: dev #研发环境
