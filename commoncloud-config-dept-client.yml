@@ -46,6 +46,13 @@ info:
   company.name: www.lht.com
   build.artifactId: ${project.artifactId}
   build.version: ${project.version}
+  
+mybatis:
+  type-aliases-package: com.lht.springcloud.entity          
+  mapper-locations: classpath:mybatis/mapper/**/*.xml       
+  configuration:
+    cache-enabled: true                                     
+    mapUnderscoreToCamelCase: true  
 ---
 server:
   port: 8001
@@ -90,3 +97,10 @@ info:
   company.name: www.lht.com
   build.artifactId: ${project.artifactId}
   build.version: ${project.version}
+  
+mybatis:
+  type-aliases-package: com.lht.springcloud.entity          
+  mapper-locations: classpath:mybatis/mapper/**/*.xml       
+  configuration:
+    cache-enabled: true                                     
+    mapUnderscoreToCamelCase: true  
